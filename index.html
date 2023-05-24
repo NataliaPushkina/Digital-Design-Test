@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="icon" href="./images/bouquet-icon.png">
+  <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&display=swap" rel="stylesheet">
+  <link title="theme" rel="stylesheet" href="./style_light.css" />
+  <title>Digital Design Test</title>
+</head>
+<body>
+  <body class="page page_dark">
+    <header class="header">
+      <div class="header__container">
+    <ul class="menu__categories">
+      <li class="menu__category">
+        <a class="menu__category-link" href="#auth">Авторские букеты</a>
+      </li>
+      <li class="menu__category">
+        <a class="menu__category-link" href="#mono">Монобукеты</a>
+      </li>
+      <li class="menu__category">
+        <a class="menu__category-link" href="#case">Цветы в коробке</a>
+      </li>
+      <li class="menu__category">
+        <a class="menu__category-link" href="#corf">Цветы в корзине</a>
+      </li>
+      <li class="menu__category">
+        <a class="menu__category-link" href="#strawberry">Букеты из клубники</a>
+      </li>
+    </ul>
+    <button type="button" class="header__theme"></button>
+    </div>
+    </header>
+
+    <section class="elements">
+      <span class="elements__margin-block" id="auth"></span>
+      <h1 class="elements__title elements__title_type_auth">Авторские букеты</h1>
+      <ul class="elements__list elements__list_type_auth"></ul>
+      <span class="elements__margin-block" id="mono"></span>
+      <h1 class="elements__title elements__title_type_mono">Монобукеты</h1>
+      <ul class="elements__list elements__list_type_mono"></ul>
+      <span class="elements__margin-block" id="case"></span>
+      <h1 class="elements__title elements__title_type_case">Цветы в коробке</h1>
+      <ul class="elements__list elements__list_type_case"></ul>
+      <span class="elements__margin-block" id="corf"></span>
+      <h1 class="elements__title elements__title_type_corf">Цветы в корзине</h1>
+      <ul class="elements__list elements__list_type_corf"></ul>
+      <span class="elements__margin-block" id="strawberry"></span>
+      <h1 class="elements__title elements__title_type_strawberry">Букеты из клубники</h1>
+      <ul class="elements__list elements__list_type_strawberry"></ul>
+    </section>
+  </section>
+
+    <button type="button" class="button button_to_top"></button>
+
+    <div class="footer">
+      <div class="footer__container">
+      <ul class="footer__list">
+        <li class="footer__item">
+          <a class="footer__link" href="#auth">Авторские букеты</a>
+        </li>
+        <li class="footer__item">
+          <a class="footer__link" href="#mono">Монобукеты</a>
+        </li>
+        <li class="footer__item">
+          <a class="footer__link" href="#case">Цветы в коробке</a>
+        </li>
+        <li class="footer__item">
+          <a class="footer__link" href="#corf">Цветы в корзине</a>
+        </li>
+        <li class="footer__item">
+          <a class="footer__link" href="#strawberry">Букеты из клубники</a>
+        </li>
+      </ul>
+    </div>
+    </div>
+
+    <div class="popup">
+      <dv class="popup__container">
+        <button type="button" class="button button_type_close"></button>
+        <form
+          class="popup__form"
+          name="formElement"
+        >
+        <h2 class="form__title"></h2>
+        <label class="form__label" for="count">Количество букетов
+        <input
+            required
+            type="number"
+            name="count"
+            id="count"
+            class="form__input form__input_type_number"
+            value=1
+            min="1"
+          />
+          </label>
+          <fieldset class="form__inputs">Размер
+
+          <label class="form__label for="small">
+          <input
+            required
+            type="radio"
+            name="size"
+            id="small"
+            class="form__input form__input_type_radio"
+            value="hard"
+          />
+          <span class="form__pseudo-item"></span>
+          <span class="form__label-text">S</span>
+          </label>
+          <label class="form__label for="medium">
+          <input
+            required
+            checked
+            type="radio"
+            name="size"
+            id="medium"
+            class="form__input form__input_type_radio" 
+            value="soft"
+          />
+          <span class="form__pseudo-item"></span>
+          <span class="form__label-text">M</span>
+          </label>
+          <label class="form__label for="large">
+          <input
+            required
+            type="radio"
+            name="size"
+            id="large"
+            class="form__input form__input_type_radio"
+            value="audio"
+          />
+          <span class="form__pseudo-item"></span>
+          <span class="form__label-text">L</span>
+          </label>
+        </fieldset>
+        
+        <fieldset class="form__inputs">
+          <label for="comments" class="form__label">Напишите свой комментарий</label>
+            <textarea class="form__input form__input_type_text" id="text" name="text" maxlength="2000"></textarea>
+        </fieldset>
+          <button type="submit" class="button button_type_buy">Заказать</button>
+        </form>
+      </dv>
+    </div>
+
+    <template class="template-element">
+      <li class="element">
+        <img
+          src="./images/books.jpg"
+          alt=""
+          class="element__photo"
+        />
+        <div class="element__caption">
+          <h2 class="element__title"></h2>
+          <span class="element__date"></span>
+        </div>
+        <button type="button" class="button element__button">Заказать</button>
+      </li>
+    </template>
+
+    <script type="module" src="index.js"></script>
+</body>
+</html>

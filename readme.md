@@ -1,6 +1,6 @@
 # Тестовое задание для Digital Design
 
-## Технологии
+**Технологии**
 * HTML
 * CSS
 * JavaScript
